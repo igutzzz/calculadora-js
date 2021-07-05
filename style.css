@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+
+.botões{
+    display: grid; 
+    text-align: center;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      "RESET RESET igual igual"; 
+    width: 25rem;
+    height: 20rem;
+  
+}
+
+.calculadora {
+   display: block;
+  }
+
+#calc {
+    grid-area: calc;
+    color: white;
+}
+
+#RESET { 
+    grid-area: RESET; 
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 10px 1px 0px hsl(224, 28%, 35%);
+}
+
+#delete {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 10px 1px 0px hsl(224, 28%, 35%);
+}
+
+#igual { 
+    grid-area: igual; 
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    box-shadow: 0px 10px 1px 0px hsl(6, 70%, 34%);
+}
+
+#resultado { 
+    grid-area: resultado; 
+    text-align: right;
+    width: 23.9rem;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 32px;
+    height: 40px;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    border-radius: 7px;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 32px;
+    box-shadow: 0px 10px 1px 0px hsl(28, 16%, 65%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(30, 25%, 79%);
+}
+
+input {
+    border-radius: 10px;
+    border: 0;
+    background-color:hsl(224, 36%, 15%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 32px;
+    color: white;
+    padding: 15px;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 8px 1px 0px hsl(28, 16%, 65%);
+}
+
+#delete:active {
+    transform: translateY(2px);
+    box-shadow: 0px 8px 0px 0px hsl(224, 28%, 35%);
+}
+
+#RESET:active {
+    transform: translateY(2px);
+    box-shadow: 0px 8px 0px 0px hsl(224, 28%, 35%);
+}
+
+#igual:active {
+    transform: translateY(2px);
+    box-shadow: 0px 8px 1px 0px hsl(6, 70%, 34%);
+}
